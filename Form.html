@@ -5,31 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* Include padding and border in the width */
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            width: 100%;
+            background-color: black;
+            overflow: hidden;
+            /* Clearfix hack to contain floated elememts */
+        }
+
+        .box {
+            float: left;
+            width: 30%;
+            margin: 5px;
+            background-color: aquamarine;
+            padding: 19px;
+            text-align: center;
+
+
+        }
+    </style>
 </head>
 
 <body">
-    <form>
-        <label for="fullname"><B>FullName :</B></label>
-        <input style="color: rgb(83, 29, 29);" type="text" name="fullname" id="fullname"><br><br>
-        <label for="id">ID :</label>
-        <input type="text" name="id" id="id"><br><br>
-        <label for="Gender">Gender</label>
-        <input type="text" name="Gender" id="Gender"><br><br>
-        <label for="password">Password :</label>
-        <input type="password" name="password" id="password"><br><br>
-        <label for="date">Date of Birth</label>
-        <input type="date" name="date" id="date"><br><br>
+    <h2>Float Layout</h2>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
 
-
-        <label for="province">Where</label>
-        <select name="province" id="province">
-            <option value="PP">Phnom Penh</option>
-            <option value="pv">Prey Veng</option>
-            <option value="KP">Kompot</option>
-        </select><br><br>
-        <label for="message">Message</label><br><br>
-        <textarea name="message" id="message" rows="4" cols="40">Note</textarea>
-    </form>
     </body>
 
 </html>
